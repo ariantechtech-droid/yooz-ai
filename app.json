@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "YOOZ AI",
+    "slug": "yooz-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/yooz-logo.png",
+    "android": {
+      "package": "com.yooz.ai",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/yooz-logo.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": ["READ_MEDIA_IMAGES", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      ["expo-image-picker", { "photosPermission": "Allow Arian AI Studio to select a reference image." }],
+      ["expo-media-library", { "photosPermission": "Allow Arian AI Studio to save generated images." }],
+      ["expo-build-properties", { "android": { "usesCleartextTraffic": true } }]
+    ]
+  }
+}
